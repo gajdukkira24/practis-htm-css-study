@@ -1,64 +1,172 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" href="./style.css" >
-    <title>practice-html-css</title>
-    </head>
-    <body>
-        <header>
-    <h1>Практика</h1>
-    <p>Привіт, мене звати Кіра!</p>
-    <p>Давай розповім про своє захоплення</p>
-  
- <ul>
-    <li><a href="#">
-        Займаюся програмуванням
-    </a></li>
-    <li><a href="./love-sport.html">
-        Люблю спорт
-    </a></li>
-   </ul>
-   </header>
-   <main>
-    <button>Проста кнопка </button>
-    <h1>Це моє мрія </h1>
-    <hr>
-    <img src="./imges/download-3.jpg" alt="фото-коня" width="500px">
-    <hr>
-    <!--  -->
-    <h1><strong>Про коней</strong> </h1>
-    <h2>Україна має давні традиції конярства, що поєднують історію, <br>спорт та унікальні породи.
-    </h2>
-    <p>Основні українські породи:</p>
-    <hr>
-    <p><em>Гуцульська (Гуцулік): Невеликі, але неймовірно витривалі коні Карпат. Вони ідеальні для гірських розумів та іпотерапії.
-    </em></p>
-    <img src="./imges/Гуцульська.webp" alt="Гуцульська" width="500px">
-    <hr>
- 
-    <p><em>Новоолександрівський ваговоз: Масивні та сильні коні, виведені для важких робіт, що вирізняються спокійним характером</em></p>
-    <img src="./imges/Новоолександрівський ваговоз.jpg" alt="ваговоз" width="500px">
-    <hr>
-    <!--  -->
+    <link rel="stylesheet" href="style.css">
 
-</main>
-<footer>
-    <h1>Тепер ти розкаж про себе</h1>
-    <label>Коли в тебе день народження?</label>
-    <input type="date">
-    
-    <label>Який твій улюблений колір?</label>
-    <input type="color">
-    <h1>Моя історія</h1>
-<h2>Дитинство</h2>
-<h3>Перші захоплення</h3>
-<p>Я хочу стати <strong>веб-розробником</strong>.</p>
-<p>Мені <em>дуже</em> подобається React.</p>
-<p>Привіт<br>Як справи?</p>
+    <link rel="icon" type="image/svg+xml" href="./images/symbol-defs.svg 19-08-57-550.svg#icon-nature-svgrepo-com" />
 
-</footer>
-    
+    <title>Practica</title>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="plantopia-title">Plantopia</h1>
+            <nav aria-label="Головна навігація">
+                <ul class="plantopia-nav">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Види рослин</a></li>
+                    <li><a href="#">Догляд</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="plantopia-about">
+            <h2 class="plantopia-about-title">Відкрий світ рослин з Plantopia</h2>
+            <hr>
+            <article>
+                <p>
+                    <mark>Plantopia</mark> допомагає дізнатися про найцікавіші рослини з усього світу. Тут ти знайдеш
+                    інформацію про догляд за кімнатними і садовими рослинами,
+                    <br> їх особливості та користь для дому. Ми розповідаємо про унікальні породи, їхні історії та
+                    цікаві факти. На сайті є поради для початківців та досвідчених любителів зелені.
+                    <br> Ти дізнаєшся, як правильно поливати, підживлювати та пересаджувати рослини. Крім цього, ми
+                    показуємо, як красиво оформити свій простір за допомогою зелених акцентів.
+                    <br>Приєднуйся до Plantopia і відкрий для себе світ живої природи!
+                    <hr>
+                </p>
+                <iframe width="800" height="450" src="https://www.youtube.com/embed/4NOXOv8UmrI"
+                    title="Відео про рослини" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </article>
+            <article>
+                <h3>Наші рекомендації:</h3>
+                <div class="box">
+                    <img src="./images/Алоє вера.jpg" alt="Алоє вера">
+                    <h3>Алоє вера</h3>
+                    <div class="overlay">
+                        <h3>Алоє вера</h3>
+                        <p>не тільки декоративна, а й лікувальна.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="./images/Заміокулькас.webp" alt="Заміокулькас">
+                    <h3>Заміокулькас</h3>
+                    <div class="overlay">
+                        <h3>Заміокулькас</h3>
+                        <p>любить тінь, поливати рідко.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/Монстера.jpg" alt="Монстера">
+                    <h3></h3>
+                    <div class="overlay">
+                        <h3>Монстера</h3>
+                        <p>стильна з великими листками, любить світло без прямого сонця.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/Папороть Нефролепіс.webp" alt="Папороть">
+                    <h3>Папороть</h3>
+                    <div class="overlay">
+                        <h3>Папороть</h3>
+                        <p>потребує вологого повітря, ідеальна для ванної.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="./images/Пеларгонія.jpg" alt="Пеларгонія">
+                    <h3>Пеларгонія</h3>
+                    <div class="overlay">
+                        <h3>Пеларгонія</h3>
+                        <p>яскраво цвіте, любить сонячні підвіконня.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="./images/Сансевієрія.webp" alt="Сансевієрія">
+                    <h3>Сансевієрія</h3>
+                    <div class="overlay">
+                        <h3>Сансевієрія</h3>
+                        <p>витривала, майже не потребує догляду.</p>
+                    </div>
+                </div>
+
+
+                <div class="box">
+                    <img src="./images/Спатіфілум.webp" alt="Спатіфілум">
+                    <h3>Спатіфілум</h3>
+                    <div class="overlay">
+                        <h3>Спатіфілум</h3>
+                        <p>цвіте навіть у кімнаті з невеликим світлом.</p>
+                    </div>
+                </div>
+
+
+            </article>
+
+    </main>
+    <footer>
+        <form>
+            <h3>Контакти</h3>
+            <p>Email: plantopia@email.com</p>
+            <p>Місто: Київ</p>
+
+            <section class="footer-social">
+                <h3>Соцмережі</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Telegram</a></li>
+                </ul>
+            </section>
+
+            <p class="footer-copy">© 2026 Plantopia. Всі права захищені.</p>
+        </form>
+
+    </footer>
 </body>
+
+
 </html>
+
+
+<!-- 
+
+<img src="./imeges/photo_2026-03-01_10-16-04.jpg" alt="фото тойоти">
+<svg style="position: fixed; inset: 0; " >
+    <filter id="water">
+
+        <feTurbulence
+        baseFrequency="0.02 0.04"
+        numOctaves="5"
+      >
+        <animate
+          attributeName="baseFrequency"
+          dur="10s"
+          values="0.03 0.03; 0.03 0.02; 0.02 0.03"
+          repeatCount="indefinite"
+        />
+      </feTurbulence>
+
+ 
+     <feDisplacementMap
+     in="SourceGraphic"
+     scale="8"
+     
+     
+     >
+     </feDisplacementMap>
+     <feGaussianBlur  stdDeviation="0.5"/>
+    </filter>
+</svg> -->

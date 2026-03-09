@@ -1,0 +1,70 @@
+/* 
+
+img{
+    width: 600px;
+    height: 700px;
+    object-fit: cover;
+
+    filter: url(#water);
+}
+
+
+
+
+ */
+mark{
+    background-color: #75975e;
+    color: #ffffff;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #f9f9fd;
+  }
+  
+ 
+  
+  .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color:#75975e;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#234422;
+  
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .box:hover .overlay {
+    transform: translatey(0);
+  }
+  
+  .overlay p {
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .overlay code {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #2a2a2a;
+  }
+  
