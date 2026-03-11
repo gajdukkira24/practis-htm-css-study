@@ -9,9 +9,47 @@ img{
 }
 
 
-
-
  */
+
+ /* 1. Скидання стандартних стилів браузера */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    /* 2. Базові стилі сторінки */
+    body{
+    font-family: Arial, sans-serif;
+    line-height:1.5;
+    background-color:#f4f7f3;
+   
+    }
+    
+    /* 3. Контейнер для центрування контенту */
+    .container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 15px;
+    }
+    
+    /* 4. Картинки */
+    img{
+    max-width:100%;
+    height:auto;
+    display:block;
+    }
+    
+    /* 5. Списки */
+    ul{
+    list-style:none;
+    }
+    
+    /* 6. Посилання */
+    a{
+    text-decoration:none;
+    color:inherit;
+    }
 mark{
     background-color: #75975e;
     color: #ffffff;
@@ -68,3 +106,49 @@ mark{
     color: #2a2a2a;
   }
   
+ 
+  .title-plant{
+    background-color: #75975e;
+    border-radius:  10px;
+    color: #ffffff;
+
+  }
+
+
+ .plantopia-title:hover{
+    transform: scale(1.1);
+
+    
+ }
+
+ .container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 15px;
+    
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    }
+
+    .plantopia-nav{
+        font-size: 18px;
+        display: flex;   /* пункти меню в рядок */
+        gap: 35px;       /* відстань між пунктами */
+        list-style: none; /* прибираємо точки списку */
+    }
+    .plantopia-nav li:hover{
+        transform: scale(1.2);
+        border-bottom: 2px solid #75975e;; 
+   
+
+    }
+   
+    header{
+        margin-bottom: 20px;
+        background-color: #d1e5c3;
+        /* background-image: url('./images/фон.png'); */
+        
+    }
+ 
