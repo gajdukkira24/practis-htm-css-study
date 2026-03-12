@@ -20,22 +20,26 @@
         <div class="container">
             <h1 class="plantopia-title"><a href="./index.html"><span class="title-plant">Plant</span>opia</a></h1>
             <nav aria-label="Головна навігація">
+
+                <button class="menu-toggle">☰</button>
+                
                 <ul class="plantopia-nav">
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Види рослин</a></li>
-                    <li><a href="#">Догляд</a></li>
-                    <li><a href="#">Контакти</a></li>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Види рослин</a></li>
+                <li><a href="#">Догляд</a></li>
+                <li><a href="#">Контакти</a></li>
                 </ul>
-            </nav>
+                
+                </nav>
         </div>
      
     </header>
     <main>
         <div class="plantopia-about">
-            <h2 class="plantopia-about-title">Відкрий світ рослин з Plantopia</h2>
-            <hr>
+            <h2 class="plantopia-about-title">Відкрий світ рослин з <span class="title-plant">Plant</span>opia</h2>
+            <hr class="plantopia-line">
             <article>
-                <p>
+                <p class="plantopia-about-p">
                     <mark>Plantopia</mark> допомагає дізнатися про найцікавіші рослини з усього світу. Тут ти знайдеш
                     інформацію про догляд за кімнатними і садовими рослинами,
                     <br> їх особливості та користь для дому. Ми розповідаємо про унікальні породи, їхні історії та
@@ -43,16 +47,19 @@
                     <br> Ти дізнаєшся, як правильно поливати, підживлювати та пересаджувати рослини. Крім цього, ми
                     показуємо, як красиво оформити свій простір за допомогою зелених акцентів.
                     <br>Приєднуйся до Plantopia і відкрий для себе світ живої природи!
-                    <hr>
+                    <hr class="plantopia-line">
                 </p>
+                <div class="plantopia-video">
                 <iframe width="800" height="450" src="https://www.youtube.com/embed/4NOXOv8UmrI"
                     title="Відео про рослини" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
+            </div>
             </article>
             <article>
-                <h3>Наші рекомендації:</h3>
+                <h3 class="plantopia-about-title">Наші рекомендації:</h3>
+                <div class="plants-grid">
                 <div class="box">
                     <img src="./images/Алоє вера.jpg" alt="Алоє вера">
                     <h3>Алоє вера</h3>
@@ -72,7 +79,7 @@
                 </div>
                 <div class="box">
                     <img src="./images/Монстера.jpg" alt="Монстера">
-                    <h3></h3>
+                    <h3>Монстера</h3>
                     <div class="overlay">
                         <h3>Монстера</h3>
                         <p>стильна з великими листками, любить світло без прямого сонця.</p>
@@ -114,6 +121,7 @@
                         <p>цвіте навіть у кімнаті з невеликим світлом.</p>
                     </div>
                 </div>
+            </div>
 
 
             </article>
