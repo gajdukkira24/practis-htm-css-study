@@ -11,189 +11,197 @@ img{
 
  */
 
- /* 1. Скидання стандартних стилів браузера */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    }
-    
-    /* 2. Базові стилі сторінки */
-    body{
+/* 1. Скидання стандартних стилів браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Базові стилі сторінки */
+body {
     font-family: Arial, sans-serif;
-    line-height:1.5;
-    background-color:#f4f7f3;
-   
-    }
-    
-    /* 3. Контейнер для центрування контенту */
-    .container{
-    max-width:1200px;
-    margin:0 auto;
-    padding:0 15px;
-    }
-    
-    /* 4. Картинки */
-    img{
-    max-width:100%;
-    height:auto;
-    display:block;
-    }
-    
-    /* 5. Списки */
-    ul{
-    list-style:none;
-    }
-    
-    /* 6. Посилання */
-    a{
-    text-decoration:none;
-    color:inherit;
-    }
-mark{
+    line-height: 1.5;
+    background-color: #f4f7f3;
+
+}
+
+/* 3. Контейнер для центрування контенту */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 4. Картинки */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 5. Списки */
+ul {
+    list-style: none;
+}
+
+/* 6. Посилання */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+mark {
     background-color: #75975e;
     color: #ffffff;
 }
+
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     line-height: 1.5;
     font-family: sans-serif;
     background-color: #f9f9fd;
-  }
-  
- 
-  
-  .box {
+}
+
+
+
+.box {
     position: relative;
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    background-color:#75975e;
+    background-color: #75975e;
     overflow: hidden;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:#234422;
-  
+    background-color: #75975e;
+
     transform: translatey(100%);
     transition: transform 250ms ease-in-out;
-  }
-  
-  .box:hover .overlay {
+}
+
+.box:hover .overlay {
     transform: translatey(0);
-  }
-  
-  .overlay p {
+}
+
+.overlay p {
     color: #fff;
     padding: 10px;
     margin: 0;
     font-size: 18px;
-  }
-  
-  .overlay code {
+}
+
+.overlay code {
     display: inline-block;
     padding: 2px 4px;
     border-radius: 2px;
     background-color: #fff;
     color: #2a2a2a;
-  }
-  
- 
-  .title-plant{
+}
+
+
+.title-plant {
     background-color: #75975e;
-    border-radius:  10px;
+    border-radius: 10px;
     color: #ffffff;
 
-  }
+}
 
 
- .plantopia-title:hover{
+.plantopia-title:hover {
     transform: scale(1.1);
 
-    
- }
 
- .container{
-    width:100%;
-    max-width:1200px;
-    margin:0 auto;
-    padding:0 15px;
-    
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plantopia-nav {
+    font-size: 18px;
+    display: flex;
+    /* пункти меню в рядок */
+    gap: 35px;
+    /* відстань між пунктами */
+    list-style: none;
+    /* прибираємо точки списку */
+}
+
+.plantopia-nav li:hover {
+    transform: scale(1.2);
+    border-bottom: 2px solid #75975e;
+    ;
+
+
+}
+
+header {
+    margin-bottom: 20px;
+    background-color: #d1e5c3;
+    /* background-image: url('./images/фон.png'); */
+
+}
+
+@media (max-width:768px) {
+
+    .plantopia-nav {
+        gap: 20px;
     }
 
-    .plantopia-nav{
-        font-size: 18px;
-        display: flex;   /* пункти меню в рядок */
-        gap: 35px;       /* відстань між пунктами */
-        list-style: none; /* прибираємо точки списку */
-    }
-    .plantopia-nav li:hover{
-        transform: scale(1.2);
-        border-bottom: 2px solid #75975e;; 
-   
-
-    }
-   
-    header{
-        margin-bottom: 20px;
-        background-color: #d1e5c3;
-        /* background-image: url('./images/фон.png'); */
-        
-    }
-    @media (max-width:768px){
-
-        .plantopia-nav{
-        gap:20px;
-        }
-        
-        .box{
-        width:45%;
-        }
-        
-        }
-
-
-.menu-toggle{
-    display:none;
-    font-size:30px;
-    background:none;
-    border:none;
-    cursor:pointer;
+    .box {
+        width: 45%;
     }
 
+}
 
-    @media (max-width:768px){
 
-        .menu-toggle{
-        display:block;
-        }
-        
-        .plantopia-nav{
-        display:none;
-        flex-direction:column;
-        gap:15px;
-        background:#d1e5c3;
-        padding:20px;
-        }
-        
-        .plantopia-nav.active{
-        display:flex;
-        }
-        
-        }
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 
-.plantopia-about-title{
+
+@media (max-width:768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .plantopia-nav {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background: #d1e5c3;
+        padding: 20px;
+    }
+
+    .plantopia-nav.active {
+        display: flex;
+    }
+
+}
+
+.plantopia-about-title {
     text-align: center;
     margin-bottom: 20px;
 
@@ -201,73 +209,208 @@ mark{
 
 
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .plantopia-about-title{
-    gap:20px;
-    }
-  
-    
+    .plantopia-about-title {
+        gap: 20px;
     }
 
-    @media (max-width:480px){
 
-        .plantopia-about-title{
-            gap:20px;
-            }
-        
-        }
-        .plantopia-about-p{
-            width: auto;
-            height: auto;
-        }
-        
-        .plantopia-line{
-            width: auto;
-            
-            
-        }
-      
+}
+
+@media (max-width:480px) {
+
+    .plantopia-about-title {
+        gap: 20px;
+    }
+
+}
+
+.plantopia-about-p {
+    width: auto;
+    height: auto;
+}
+
+.plantopia-line {
+    width: auto;
+
+
+}
 
 
 
-.plantopia-about-p{
+
+.plantopia-about-p {
     font-size: 30px;
 }
 
-.plantopia-line{
+.plantopia-line {
     margin-bottom: 30px;
-    
+
 }
 
-.plantopia-video{
+.plantopia-video {
     background-color: #75975e;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+
+@media (max-width:768px) {
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:480px) {
+    .plants-grid {
+        grid-template-columns: 1fr;
     }
 
+    .box img {
+        width: auto;
+        height: auto;
+    }
+
+    .plants-grid {
+        width: auto;
+    }
+}
+
+.box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+
+.plantopia-title-h3 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.plantopia-title-p {
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+@media (max-width:768px) {
+
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}
+
+
+
+@media (max-width:480px) {
+
+    .plants-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .box img {
+        height: 200px;
+    }
+
+    .plantopia-title-h3 {
+        font-size: 22px;
+    }
+
+}
+
+.box {
+
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+
+.plantopia-video {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.plantopia-video iframe {
+    width: 100%;
+    height: 450px;
+}
+
+@media (max-width:480px) {
+
+    .plantopia-video iframe {
+        height: 250px;
+    }
+
+}
+footer{
+    margin-bottom: 20px;
+    background-color: #d1e5c3;
+    padding:30px 0;
+text-align:center;
+
+}
   
-    @media (max-width:768px){
-        .plants-grid{
-        grid-template-columns:repeat(2,1fr);
-        }
-        }
-        
-        @media (max-width:480px){
-        .plants-grid{
-        grid-template-columns:1fr;
-        }
+
+
+
+.div-footer{
+    
+        text-align:center;
+        margin-bottom:25px;
+        color:rgb(0, 0, 0);
+}  
+
+.footer-social ul{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    list-style:none;
+    padding:0;
+    }
+
+    .footer-social li{
+        text-decoration:none;
+        color:rgb(0, 0, 0);
+        font-size:18px;
+        font-weight:500;
+        transition:0.3s;
+        margin-bottom: 10px;
         }
 
-        .box img{
-            width:100%;
-            height:250px;
-            object-fit:cover;
+
+        .footer-social li:hover{
+            color:#000000;
             }
 
-            .plants-grid{
-                display:grid;
-                grid-template-columns:repeat(3, 1fr);
-                gap:30px;
+
+
+            .plantopia-title-footer{
+                font-size:22px;
+                margin-bottom:10px;
                 }
+
+
+                .div-footer p{
+                    margin:5px 0;
+                    font-size:16px;
+                    }
